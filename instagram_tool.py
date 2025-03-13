@@ -18,7 +18,7 @@ class InstagramTool(QWidget):
         self.setGeometry(100, 200, 350, 350)
         self.setStyleSheet("background-color: red;")
         
-        # "The ECY" baÅŸlÄ±ÄŸÄ± - YanÄ±p sÃ¶nen renkli
+         "The ECY" baÅŸlÄ±ÄŸÄ± - YanÄ±p sÃ¶nen renkli
         self.title_label = QLabel("\u2620 The ECY \u2620", self)
         self.title_label.setFont(QFont("Arial", 25, QFont.Bold))
         self.title_label.setAlignment(Qt.AlignCenter)
@@ -26,7 +26,7 @@ class InstagramTool(QWidget):
         self.blink_timer.timeout.connect(self.blink_title)
         self.blink_timer.start(500)
         
-        # KullanÄ±cÄ± Ara KÄ±smÄ±
+         KullanÄ±cÄ± Ara KÄ±smÄ±
         self.search_label = QLabel("kullanÄ±cÄ± ara", self)
         self.search_label.setFont(QFont("Arial", 14))
         self.search_label.setStyleSheet("color: black;")
@@ -38,7 +38,7 @@ class InstagramTool(QWidget):
         self.search_button.setStyleSheet("background-color: yellow; border-radius: 20px; padding: 10px; font-weight: bold;")
         self.search_button.clicked.connect(self.search_instagram)
         
-        # Åifre Deneme KÄ±smÄ±
+         Åifre Deneme KÄ±smÄ±
         self.password_label = QLabel("ben yaparsam olur", self)
         self.password_label.setFont(QFont("Arial", 10))
         self.password_label.setStyleSheet("color: blue;")
@@ -51,12 +51,12 @@ class InstagramTool(QWidget):
         self.try_passwords_button.setStyleSheet("background-color: yellow; border-radius: 20px; padding: 10px; font-weight: bold;")
         self.try_passwords_button.clicked.connect(self.try_passwords)
         
-        # Wordlist Butonu
+         Wordlist Butonu
         self.wordlist_button = QPushButton("WORDLÄ°ST", self)
         self.wordlist_button.setStyleSheet("background-color: blue; border-radius: 20px; padding: 10px; font-weight: bold;")
         self.wordlist_button.clicked.connect(self.open_wordlist)
         
-        # Layout
+         Layout
         layout = QVBoxLayout()
         layout.addWidget(self.title_label)
         layout.addWidget(self.search_label)
